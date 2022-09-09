@@ -11,7 +11,7 @@
         ob_end_clean();
         imagedestroy($imageCreate);
         $content = imagecreatefromstring($cont);
-        $output = "hedef_klasor/".$name.".webp"; //Değiştirilen dosyanın yeni konumu
+        $output = "hedef_klasor/".$name.".webp"; //Değiştirilen dosyanın yeni konumu.
         imagewebp($content, $output, 100);
         imagedestroy($content);
         echo("BAŞARILI");
